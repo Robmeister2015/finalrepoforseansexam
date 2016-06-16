@@ -14,7 +14,6 @@ public class BoundedWildcards {
 		for(Number num : numList){
 			result += num.doubleValue();
 		}
-		
 		return result;
 	}
 	

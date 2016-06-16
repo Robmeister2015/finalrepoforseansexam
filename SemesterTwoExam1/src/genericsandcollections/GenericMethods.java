@@ -8,10 +8,13 @@ public class GenericMethods {
 	/*
 	 * The below method has a generic return and takes a generic list as a parameter
 	 * It is capable of calling the set method on any generic list.
+	 * It can also add items of type T
+	 * The list type must match the value type given with it or a compilation error will result
 	 */
 	public static <T> void fill(List<T> list, T val){
 		for(int i = 0; i < list.size(); i ++){
 			list.set(i, val);
+			list.add(val);
 		}
 	}
 }

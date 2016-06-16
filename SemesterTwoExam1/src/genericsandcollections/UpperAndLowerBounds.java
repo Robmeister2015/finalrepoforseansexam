@@ -12,7 +12,7 @@ public class UpperAndLowerBounds {
 	 */
 	public void upperLowerBoundMethod(List<? super Cat> list){
 		
-		list.add(new Cat()); // Fine, Cat is-a-cat
+		list.add(new Cat()); // Fine, Cat is-a cat
 		list.add(new LongHaired()); // Also fine, longhaired is-a cat
 		// list.add(new Animal()); problem: Animal is a supertype, but not a cat. Can't be added
 		//list.add(new Dog()); What are you even doing here dog?#

@@ -10,7 +10,7 @@ public class Greediness {
 		
 		//This pattern is greedy (default)
 		Pattern p1 = Pattern.compile(".*foo");
-		Matcher m = p1.matcher("xfooxxxxxxfoo");
+		Matcher m = p1.matcher("xfooxxxxxxfooxxx");
 		
 		while(m.find()){
 			System.out.println("Greedy: " + m.group());
@@ -18,7 +18,7 @@ public class Greediness {
 		
 		//This pattern is reluctant
 		p1 = Pattern.compile(".*?foo");
-		m = p1.matcher("xfooxxxxxxfoo");
+		m = p1.matcher("xfooxxxxxxfooxxx");
 		while(m.find()){
 			System.out.println("Reluctant: " + m.group());
 		}
